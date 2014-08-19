@@ -29,12 +29,6 @@
             <version>${android.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>android.support</groupId>
-            <artifactId>compatibility-v4</artifactId>
-            <version>19.1.0</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <repositories>
