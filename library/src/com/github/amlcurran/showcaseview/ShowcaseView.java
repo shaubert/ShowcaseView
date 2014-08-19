@@ -256,7 +256,11 @@ public class ShowcaseView extends RelativeLayout
 
     @Override
     protected void dispatchDraw(Canvas canvas) {
-        if (showcaseX < 0 || showcaseY < 0 || shotStateStore.hasShot()) {
+        updateBitmap();
+        if (showcaseX < 0
+                || showcaseY < 0
+                || shotStateStore.hasShot()
+                || bitmapBuffer == null) {
             super.dispatchDraw(canvas);
             return;
         }
